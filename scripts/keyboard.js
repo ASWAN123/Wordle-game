@@ -27,12 +27,12 @@ keys.forEach(element => {
         }
 
         // for Enter button
-        if(e.target.textContent ==="OK" && document.querySelector('.ready') != null){
+        if(e.target.textContent ==="ENTER" && document.querySelector('.ready') != null){
             getVerified() ;
         }
 
         // for remove word
-        if(e.target.textContent ==="RM"){
+        if(e.target.textContent ==="DEL"){
             let target ; 
             if(document.querySelector('form[class="word working"]') != null){
                 target = document.querySelector('form[class="word working"]').querySelectorAll('input[value]:not([value=""])') ;
@@ -60,6 +60,7 @@ keys.forEach(element => {
 document.body.addEventListener('keypress',  (e)=> {
     if(alphabet.includes(e.key) && document.querySelector('form[class="word working"]') != null){
         let ready_input = document.querySelector('form[class="word working"]').querySelectorAll('input[type="text"]') ;
+        
         // target empty inputs
         if(ready_input[counting].value == "" && alphabet.includes(e.key.toLowerCase())){
             ready_input[counting].setAttribute('value', e.key) ;

@@ -1,4 +1,4 @@
-const alphabet = [ 'q' , 'w' , 'e' , 'r' ,'t' , 'y' , 'u' , 'o' ,'p' , 'i' , 'a' , 's' ,'d', 'f' , 'g' , 'h','j' , 'k' , 'l' , 'z' ,'x' , 'c' , 'v' , 'b' ,'rm' ,'n' , 'm'  , 'ok' ]
+const alphabet = [ 'q' , 'w' , 'e' , 'r' ,'t' , 'y' , 'u' , 'o' ,'p' , 'i' , 'a' , 's' ,'d', 'f' , 'g' , 'h','j' , 'k' , 'l' , 'z' ,'x' , 'c' , 'v' , 'b' ,'Del' ,'n' , 'm'  , 'Enter' ]
 
 // insert 25 inputs
 let i = 0 ;
@@ -28,6 +28,25 @@ alphabet.forEach((element , index) => {
 keyboard.innerHTML = content ;
 container2.appendChild(keyboard) ;
 
+// controlling the  view  things
+// play page
+document.querySelector('.play').addEventListener("click" , ()=> {
+    document.querySelector(".starter").style.display = "none" ;
+    document.querySelector(".theme").style.display = "block" ;
+})
 
+// how to play page
+document.querySelector('.howto').addEventListener("click" , ()=> {
+    document.querySelector(".details").style.display = "flex" ;
+    document.querySelector(".starter").style.display = "none" ;
+    document.querySelector(".theme").style.display = "none" ;
+    document.querySelector(".home").style.display = "block" ;
 
+})
 
+//  back to home
+document.querySelector('.home').addEventListener("click" , ()=> {
+    document.querySelector(".details").style.display = "none" ;
+    document.querySelector(".starter").style.display = "flex" ;
+    document.querySelector(".home").style.display = "none" ;
+})

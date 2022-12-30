@@ -1,7 +1,6 @@
 .container2 {
     width: 100% ;
     height: 30vh;
-    /* padding-top: 3%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,27 +9,26 @@
 
 .key{
     list-style-type: none;
-    border: 1px solid brown;
+    border: 1px solid gainsboro;
     height: 22px;
     width: 22px;
     text-align: center ;
     cursor: pointer;
     padding: 5px;
+    color: azure;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-radius: 5px;
 }
 
 
 /* / get back  flex 2  and  fix it  again  */
 .key[id="24"]{
-    width: 98px;
-    margin-right: 4px;
+    flex: 2;
 }
-.key[id="25"]{
-    margin-right: 4px;
-}
+
 .key[id="27"]{
     flex: 2;
-    width: 98px;
-    margin-left: 4px;
 }
 
 
@@ -41,5 +39,5 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 3px;
-    /* columns-gap: 2px; */
+    column-gap: 4px;
 }

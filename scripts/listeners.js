@@ -18,7 +18,7 @@ export const magic = (word) => {
         if(secret.includes(ele) === false){
             obj[index] = "red"
         }else{
-            obj[index] = "gray"
+            obj[index] = "yellow"
         }
         if(ele == secret[index]){
             obj[index] = "green"
