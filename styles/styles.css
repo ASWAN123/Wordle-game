@@ -28,6 +28,7 @@ input {
     border-radius: 5px;
     color: white;
     font-family: 'VT323', monospace;
+    pointer-events: none;
 }
 
 .gameover input{
