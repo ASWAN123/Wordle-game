@@ -2,7 +2,7 @@ https://vuejs-wordle.netlify.app/
 https://github.com/rachidelaid/WORDLE-VueJS/blob/main/src/words.js
 
 alphabits list :
-display grid , 
+display grid ,
 
 event lestener buttons
 
@@ -17,3 +17,24 @@ button play
 button how to play
 button for home page
 button to change color 
+
+get colors  from this  website  https://99designs.com/blog/creative-inspiration/color-combinations/
+
+colors 
+colors = [['#e2d810', #d9138a, '#12a4d9' , '#322e2f'],
+['#d72631', '#a2d5c6', '#077b8a' , '#5c3c92'],
+['#cf1578', '#e8d21d', '#039fbe' , '#b20238'],
+['#e75874', '#be1558', '#fbcbc9' , '#322514'],
+['#1e3d59', '#f5f0e1', '#ff6e40', '#ffc13b' ]]
+
+
+add notification things
+
+
+themes
+    close
+    h1
+    colors
+        styles
+            div
+            p
